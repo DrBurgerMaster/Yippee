@@ -1,0 +1,4 @@
+name: Yippee
+version: '${project.version}'
+main: me.drbur.yippee.Yippee
+api-version: 1.19
