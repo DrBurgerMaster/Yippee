@@ -1,63 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Grid Example</title>
-	<style>
-		table {
-			border-collapse: collapse;
-		}
-
-		td {
-			border: 1px solid black;
-			width: 20px;
-			height: 20px;
-		}
-	</style>
+	<title>My Grid</title>
 </head>
 <body>
-	<table>
-		<tbody>
-			<!-- Create a row of 16 cells for each row -->
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!-- Repeat for 16 rows -->
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!-- Repeat for all 16 rows -->
-			<!-- ... -->
-		</tbody>
-	</table>
+<table>
+	<tr>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+
+<button id="color-button">Change Color</button>
+
+<script>
+      var button = document.getElementById("color-button");
+      var cells = document.getElementsByTagName("td");
+
+      button.addEventListener("click", function() {
+        for (var i = 0; i < cells.length; i++) {
+          cells[i].style.backgroundColor = "red";
+        }
+      });
+    </script>
 </body>
 </html>
