@@ -13,8 +13,13 @@ public class MyServer {
     private Server server;
     private int port;
 
-    public MyServer(int port) {
-        this.port = port;
+    public MyServer() {
+        port = Yippee.getInstance().getConfig().getInt("server.port");
+        server = new Server(port);
+    }
+
+    public MyServer(int webPort) {
+        this.port = webPort;
     }
 
     public void start() throws Exception {

@@ -1,0 +1,10 @@
+# Example configuration for Yippee plugin
+# Database settings
+database:
+  url: "jdbc:h2:./plugins/Yippee/mydatabase"
+  user: "sa"
+  password: ""
+
+# Server settings
+server:
+  port: 8080
